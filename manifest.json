@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "HooBuy Bypass",
+  "version": "1.0",
+  "description": "Deletes the div with class 'el-overlay' on hoobuy.com",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://hoobuy.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
